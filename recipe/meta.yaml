@@ -13,16 +13,16 @@ source:
 
 build:
   skip: true  # [win]
-  number: 0
+  number: 1
 
 requirements:
   build:
       - gcc  # [linux]
       - llvm  # [osx]
-      - zlib
+      - zlib 1.2.*
   run:
       - libgcc  # [linux]
-      - zlib
+      - zlib 1.2.*
 
 test:
   commands:
